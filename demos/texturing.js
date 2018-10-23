@@ -56,8 +56,8 @@ let fragmentShader = `
     {        
         // Combining 2 texture samples with multiplied uv coordinates
         // Using time for second uv animation
-        outColor = texture(tex, (v_uv - 0.5) * 2.0) 
-                   + texture(tex, (v_uv - 0.5) * 2.0 * sin(time * 3.46641));
+        outColor = texture(tex, (v_uv - 0.5) * 2.0)
+                    + texture(tex, (v_uv - 0.5) * 2.0 * sin(time * 3.46641));
     }
 `;
 
